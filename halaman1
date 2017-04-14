@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SELECT-X</title>
+  <style>
+  html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+/*style*/
+.judul img{
+	height: 150px; 
+	width: 300px;
+}
+
+body{
+	background-color: black;
+}
+.menu { 
+	position: absolute;
+	top: -40px;
+	left: 250px;
+}
+ 
+.menu ul {
+	list-style: none;
+	margin-left: 40px;
+	margin-top: 50px;
+}
+.menu ul li{
+	display: inline-block;
+}
+ 
+.menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	margin-left: 32px;
+	font-size: 18px;
+
+}
+ 
+.menu ul li a:hover {
+	color: red;
+	display: block;
+}
+ 
+.menu ul li:hover ul {
+	display: block;
+	
+}
+ 
+.menu ul ul {
+display:none; 
+	list-style:none; 
+	position:absolute; 
+	left:300px; 
+	top:100px; 
+	width:190px;
+	font-size: 12px;
+}
+ 
+.menu ul ul li a {
+	float:none; 
+	display:block; 
+	padding-left:30px; 
+	text-align:center; 
+	width:160px;
+	font-size: 16px;
+	color: white;
+}
+ 
+.menu ul ul li a:hover {
+	color: red;
+}
+
+ .menu ul li:hover .pr{
+ 	top: 20px;
+ 	left: 3px;
+ 	background: none;
+ 	font-size: 10px;
+ 	position: absolute;
+}
+.menu ul li:hover .wb{
+	top: 20px;
+	left: 85px;
+ 	background: none; 
+ 	position: absolute;
+}
+.menu ul li:hover .nw{
+	left: 170px;
+	top: 20px;
+ 	background: none;
+}
+.menu ul li:hover .db {
+	left: 260px;
+	top: 20px;
+ 	background: none;
+ 	text-align: center;
+}
+.menu ul li:hover .cp{
+	left: 360px;
+	top: 20px;
+ 	background: none;
+ 	position: absolute;
+}
+.pencarian{
+	position: absolute;
+	left: 1160px;
+	top: 10px;
+}
+.sosmed{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+.sosmed .fb{
+	width: 50px;
+	position: absolute;
+	top: -20px;
+}
+.sosmed .tw{
+	width: 50px;
+	position: absolute;
+	left: 40px;
+	top: -20px;
+}
+.sosmed .ig{
+	width: 50px;
+	position: absolute;
+	left: 80px;
+	top: -20px;
+}
+.sosmed .gm{
+	width: 49px;
+	position: absolute;
+	left: 120px;
+	top: -20px;
+}
+
+
+
+
+.garisementara{
+	width: 700px;
+	background: white;
+	position: absolute;
+	top: 138px;
+	left: px;
+	height: 1px;
+}	
+.garisementara2{
+	width: 700px;
+	background: white;
+	position: absolute;
+	top: 175px;
+	left: px;
+	height: 1px;
+}	
+  </style>
+</head>
+<body>
+<div class="judul">
+	<img src="selectx.png">
+</div>
+<div class="sosmed">
+	<img class="fb" src="facebook.png">
+	<img class="tw" src="twitter.png">
+	<img class="ig" src="instagram.png">
+	<img class="gm" src="gmail.png">
+</div>
+<div class="menu">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Program</a>
+				<ul class="pr">
+					<li><a href="">Java</a></li>
+					<li><a href="">Visual Basic</a></li>
+					<li><a href="">Turbo Pascal</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Web</a>
+				<ul class="wb">
+					<li><a href="">PHP</a></li>
+					<li><a href="">HTML</a></li>
+					<li><a href="">CSS</a></li>
+					<li><a href="">JavaScript</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Network</a>
+				<ul class="nw">
+					<li><a href="">Internet</a></li>
+					<li><a href="">VPS & VPN</a></li>
+					<li><a href="">Topologi</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Database</a>
+				<ul class="db">
+					<li><a href="">My SQL</a></li>
+					<li><a href="">MS. Acces</a></li>
+					<li><a href="">rkngr</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Computing</a>
+				<ul class="cp">
+					<li><a href="">kgnr</a></li>
+					<li><a href="">wjr</a></li>
+					<li><a href="">egjrr</a></li>
+				</ul>
+			</li>
+		</ul>
+
+</div>
+<div class="pencarian">
+	<form>
+  <input class="search" type="text" placeholder="Cari..." required>	
+  <input class="button" type="button" value="Cari">		
+</form>	
+</div>
+</body>
+</html>
